@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<?php
+echo $_SERVER['PHP_SELF'];
+?>
+    <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+    <label for="Marks"> Marks</label>
+        <input type="number" name="Marks" id="">
+    <br>
+    <label for="Level"> Level</label>
+    <select name="Level" id="lvl">
+        <option value="Undergraduate">Undergraduate</option>
+        <option value="HND">HND</option>
+        <option value="Masters">Masters</option>
+    </select>
+    <br>
+    <input type="submit" value="Submit ">
+    </form>
+
+</body>
+</html>
